@@ -2,13 +2,11 @@ h1{
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 50px;
-
 }
 
 p::before{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-
 }
 
 h2{
@@ -40,4 +38,100 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+.hero{
+    height: 100vh; 
+    width: 100vh;
+}
+
+.hero .container{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(70%);
+}
+
+nav {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-left: 100px;
+    float: bottom;
+    transform: translateX(-20%) translateY(150%);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: cadetblue;
+}
+
+nav ul li a:hover {
+    background-color: goldenrod;
+
+}
+
+a:visited {
+    color:dimgrey
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Open Sans, sans-serif;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.content {
+    background-color: white;
+    padding: 10px;
 }
