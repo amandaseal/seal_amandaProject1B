@@ -2,6 +2,7 @@ h1{
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 50px;
+    color: darkblue;
 }
 
 p::before{
@@ -12,27 +13,12 @@ p::before{
 h2{
     font-family: 'Oswald', sans-serif;
     text-align: left;
+    color: white;
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
     text-align: left;
-}
-
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
 }
 
 div.desc {
@@ -41,54 +27,17 @@ div.desc {
 }
 
 .hero{
-    height: 100vh; 
-    width: 100vh;
+    height: 110vh;
+    background-image: url("images/art3.jpg");
 }
 
 .hero .container{
     position: absolute;
-    text-align: center;
-    top:50%;
+    top:55%;
     left:50%;
-    transform: translateX(-50%) translateY(70%);
+    text-align: center;
+    transform: translateX(-50%) translateY(50%);
 }
-
-nav {
-    display: inline-block;
-    flex-wrap: wrap;
-    padding: 20px;
-    padding-left: 100px;
-    float: bottom;
-    transform: translateX(-20%) translateY(150%);
-    font-family: 'Open Sans', sans-serif;
-
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 10px;
-    border: solid 1px black;
-    border-radius: 5px;
-    background-color: cadetblue;
-}
-
-nav ul li a:hover {
-    background-color: goldenrod;
-
-}
-
-a:visited {
-    color:dimgrey
-}
-
 
 * {
     box-sizing: border-box;
@@ -96,7 +45,6 @@ a:visited {
 
 body {
     background-color: #f1f1f1;
-    padding: 20px;
     font-family: Open Sans, sans-serif;
 }
 
@@ -125,13 +73,49 @@ h1 {
 }
 
 .row:after {
-    content: "";
     display: table;
     clear: both;
 }
 
-
 .content {
     background-color: white;
     padding: 10px;
+}
+
+div li {
+    list-style: none;
+    padding: 0px;
+    text-decoration: none;
+}
+nav {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 20px;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background-color: darkred;
+
+}
+
+a:visited {
+    color:white
 }
