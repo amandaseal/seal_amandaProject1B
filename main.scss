@@ -1,0 +1,166 @@
+$font-1:'Oswald', sans-serif;
+$font-2: 'Open Sans', sans-serif;
+$primary-color: #f1f1f1;
+$second-color: #8b0000;
+
+h1{
+    font-size: 35px;
+    color:cadetblue;
+    font-family: $font-1;
+}
+
+.header{
+    text-transform: lowercase;
+    padding: 0px;
+    
+    h2{
+        font-size: 25px;
+        float: left;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        transition: .3s all;
+        font-family: $font-1;
+        text-align: left;
+        color: $second-color;
+
+    }
+}
+
+p {
+    font-family: $font-2;
+    text-align: left;
+}
+
+body {
+    background-color: darkslateblue;
+    color: black;
+    font-family: $font-2;
+}
+
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    font-family: $font-1;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+div {
+    li {
+        list-style: none;
+        padding: 0px;
+        text-decoration: none;
+    }
+}
+
+
+a:visited {
+    color: $second-color;
+}
+
+
+ul {
+    float: right;
+    font-size: 25px;
+    font-family: $font-1;
+    margin: 0;
+    padding: 0;
+    color:$second-color;
+   
+    li {
+        display: inline-block;
+        margin-left: 20px;
+        transition: .3s all;
+
+    }
+}
+
+
+h2:hover,
+li:hover {
+    transform: translateY(-5px);
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.animation{
+    display: none;
+
+    z-index: -1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    float: right;
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.one {
+    background-image: url(images/b1.png);
+
+}
+
+.two {
+    background-image: url(images/gbackground.jpg);
+
+}
+
+.three {
+    background-image: url(images/xs1.png);
+
+}
+
+.hero{
+    height: 110vh;
+    background-image: url("images/art3.jpg");
+}
+
+.hero .container{
+    position: absolute;
+    top:55%;
+    left:50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(50%);
+}
